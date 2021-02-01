@@ -137,4 +137,4 @@
 
         ![successful transaction](BlockchainPOA/Screenshots/mycrypto_txn_status_success.png)
 
-**Congratulations, you successfully transacted in your private blockchain `zbank`**
+**Congratulations!! you successfully transacted in your private blockchain `zbank`**
