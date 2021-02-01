@@ -42,10 +42,10 @@
 
 ## Following nodes were created within the genesis block `zbank` with addresses
 *   zbanknode1 (SEALER_ONE)
-    *   Address: 0xFb560e9951D07E27925F1b2F1bc3bD58E734fe47
+    *   Address: Fb560e9951D07E27925F1b2F1bc3bD58E734fe47
     *   Passwd: zbank21
 *   zbanknode2 (SELAER_TWO)
-    *   0x64C76D13c24334C44f762251a9a9e5AE9CAa1cCD
+    *   Address: 64C76D13c24334C44f762251a9a9e5AE9CAa1cCD
     *   Passwd: zbank21
 *   These are linked together by chain id `3434`
 
@@ -54,7 +54,7 @@
 ##  Step 1
 * Run the following geth command in one terminal window:
     * ./geth --datadir node1 --unlock "SEALER_ONE_ADDRESS" --mine --rpc --allow-insecure-unlock
-    * ./geth --datadir zbanknode1 --unlock "0xFb560e9951D07E27925F1b2F1bc3bD58E734fe47" --mine --rpc --allow-insecure-unlock
+    * ./geth --datadir zbanknode1 --unlock "Fb560e9951D07E27925F1b2F1bc3bD58E734fe47" --mine --rpc --allow-insecure-unlock
     
     * **NOTE:** Type your password and hit enter - even if you can't see it visually!
     
@@ -70,7 +70,7 @@
 * Run the following geth command in a different terminal window:
     * ./geth --datadir node2 --unlock "SEALER_TWO_ADDRESS" --mine --port 30304 --bootnodes "enode://SEALER_ONE_ENODE_ADDRESS@127.0.0.1:30303" --ipcdisable --allow-insecure-unlock
 
-    * ./geth --datadir zbanknode2 --unlock "0x64C76D13c24334C44f762251a9a9e5AE9CAa1cCD" --mine --port 30304 --bootnodes "enode://535346540290b9c1071f7babcc35432a60e5aa5eeb470e96f848fb1e0fe95866ded0743d04f1068403235243eae231c6145ca20f7a93ae497600529ece135823@127.0.0.1:30303" --ipcdisable --allow-insecure-unlock
+    * ./geth --datadir zbanknode2 --unlock "64C76D13c24334C44f762251a9a9e5AE9CAa1cCD" --mine --port 30304 --bootnodes "enode://535346540290b9c1071f7babcc35432a60e5aa5eeb470e96f848fb1e0fe95866ded0743d04f1068403235243eae231c6145ca20f7a93ae497600529ece135823@127.0.0.1:30303" --ipcdisable --allow-insecure-unlock
 
     * **NOTE:** Type your password and hit enter - even if you can't see it visually!  
     
@@ -125,17 +125,16 @@
 
         ![Send transaction](BlockchainPOA/Screenshots/mycrypto_send_txn_zbanknode1_tozbanknode2.png) 
 
-        ![Confirm_transaction](BlockchainPOA/Screenshots/mycrypto_confirm_txn.png)
+        ![Confirm_transaction](BlockchainPOA/Screenshots/mycrypto_confirm_txn.png)  
 
-    * Click the `Check TX Status` when the green message pops up, confirm the logout:
-        ![check_green_status](BlockchainPOA/Screenshots/mycrypto_check_tx_status_popup.png) 
+    * Click the `Check TX Status` when the green message pops up, confirm the logout:   
 
-        ![check tx](BlockchainPOA/Screenshots/mycrypto_txn_status_pending.png)
+        ![check_green_status](BlockchainPOA/Screenshots/mycrypto_check_tx_status_popup_new.png)    
 
-    * You should see the transaction go from `Pending` to `Successful` after the validation is confirmed in the genesis.
+    * You should see the transaction go from `Pending` to `Successful` after the validation is confirmed in the genesis.   
 
     * You can click the `Check TX Status` button to update the status.
 
-    ![successful transaction](BlockchainPOA/Screenshots/mycrypto_txn_status_success.png)
+        ![successful transaction](BlockchainPOA/Screenshots/mycrypto_txn_status_success.png)
 
 **Congratulations, you successfully transacted in your private blockchain `zbank`**
