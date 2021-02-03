@@ -1,4 +1,4 @@
-# zbank Testnet Blockchain - Proof of Authority (POA)
+# zbank Testnet Blockchain - Proof of Authority(POA)
     The Proof of Authority (PoA) algorithm is typically used for private blockchain networks as it requires pre-approval of, or voting in of, the account addresses that can approve transactions (seal blocks).
 
 # Environment setup  
